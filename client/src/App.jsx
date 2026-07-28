@@ -1,10 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Landing from "./pages/Landing/Landing";
+// import Login from "./pages/Login/Login";   // Uncomment when created
+
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-blue-500">
-        SignSense AI
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+
+        {/* Add more routes later */}
+
+        {/* <Route path="/login" element={<Login />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
