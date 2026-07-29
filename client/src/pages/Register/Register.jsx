@@ -49,7 +49,7 @@ const [error, setError] = useState("");
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-2">
       {/* Left Section */}
-      <div className="hidden lg:flex flex-col justify-center px-16 bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-500 text-white">
+      <div className="hidden lg:flex flex-col justify-center px-16 bg-gradient-to-br from-slate-800 via-blue-800 to-cyan-500 text-white">
         <div className="flex items-center gap-3 mb-10">
           <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
             <Hand size={28} />
@@ -107,7 +107,7 @@ const [error, setError] = useState("");
             </h2>
           </div>
 
-          <h3 className="text-3xl font-bold text-center">
+          <h3 className="text-2xl font-bold text-center">
             Create Account
           </h3>
 

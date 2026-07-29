@@ -19,13 +19,13 @@ const handleLogin = () => {
       {/* Left Section */}
       {/* Left Section */}
 
-<div className="hidden lg:block relative h-screen">
+<div className="hidden lg:block relative min-h-screen overflow-hidden">
 
   {/* Background Image */}
   <img
     src={aiHand}
     alt="SignSense AI"
-    className="w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full object-cover"
   />
 
   {/* Dark Overlay */}
@@ -78,7 +78,7 @@ const handleLogin = () => {
           </div>
 
           {/* Heading */}
-          <h3 className="text-3xl font-bold text-center">
+          <h3 className="text-2xl font-bold text-center">
             Sign In
           </h3>
 
@@ -112,8 +112,8 @@ const handleLogin = () => {
           </div>
 
           {/* Email */}
-          <div className="mt-6">
-            <label className="block mb-2 font-medium text-slate-700">
+          <div className="mt-4">
+            <label className="block mb-2 font-small text-slate-700">
               Email Address
             </label>
 
@@ -126,7 +126,7 @@ const handleLogin = () => {
 
           {/* Password */}
           <div className="mt-5">
-            <label className="block mb-2 font-medium text-slate-700">
+            <label className="block mb-2 font-small text-slate-700">
               Password
             </label>
 

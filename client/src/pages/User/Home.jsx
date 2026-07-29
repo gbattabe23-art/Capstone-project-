@@ -18,18 +18,18 @@ function UserDashboard() {
     <>
      {/* Navbar */}
       <UserNavbar />
-    <div className="min-h-screen bg-slate-100">
-
+    <div className="min-h-screen flex flex-col bg-slate-100">
+      <div className="flex-1">
       <div className="max-w-7xl mx-auto px-6 py-8">
 
         {/* Welcome Card */}
 
-        <div className="rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 px-10 py-14 text-white shadow-lg">
-          <h2 className="text-4xl font-bold">
+        <div className="rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 px-10 py-10 text-white shadow-lg">
+          <h2 className="text-2xl font-bold">
   Welcome Back 👋
 </h2>
 
-<p className="mt-4 text-blue-100 text-lg">
+<p className="mt-2 text-blue-100 text-sm">
   Ready to begin your Indian Sign Language recognition journey.
 </p>
 
@@ -49,11 +49,11 @@ function UserDashboard() {
 
               <div>
 
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-lg font-bold">
                   Smart Glove
                 </h2>
 
-                <p className="text-slate-500">
+                <p className="text-sm text-slate-500">
                   Status: Not Connected
                 </p>
 
@@ -82,11 +82,11 @@ function UserDashboard() {
 
             <ScanLine className="text-blue-600 mb-5" size={38} />
 
-            <h3 className="text-xl font-bold">
+            <h3 className="text-mt font-semibold">
               Recognize Sign
             </h3>
 
-            <p className="text-slate-500 mt-2">
+           <p className="mt-1 text-sm text-slate-500">
               Start gesture recognition.
             </p>
 
@@ -99,7 +99,7 @@ function UserDashboard() {
 
             <History className="text-green-600 mb-5" size={38} />
 
-            <h3 className="text-xl font-bold">
+            <h3 className="text-mt font-bold">
               History
             </h3>
 
@@ -116,7 +116,7 @@ function UserDashboard() {
 
             <BookOpen className="text-orange-500 mb-5" size={38} />
 
-            <h3 className="text-xl font-bold">
+            <h3 className="text-mt font-bold">
               Learn ISL
             </h3>
 
@@ -133,7 +133,7 @@ function UserDashboard() {
 
             <MessageSquare className="text-purple-600 mb-5" size={38} />
 
-            <h3 className="text-xl font-bold">
+            <h3 className="text-mt font-bold">
               Feedback
             </h3>
 
@@ -149,7 +149,7 @@ function UserDashboard() {
 
         <div className="mt-8 bg-white rounded-3xl shadow-md p-8">
 
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-mt font-bold">
             Recent Activity
           </h2>
 
@@ -166,6 +166,7 @@ function UserDashboard() {
       {/* Bottom Navigation */}
 
       <Footer />
+      </div>
     </div>
     </>
   );

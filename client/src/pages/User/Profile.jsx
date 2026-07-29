@@ -49,11 +49,11 @@ const handleLogout = () => {
 
     <div>
 
-      <h1 className="text-4xl font-bold">
+      <h1 className="text-3xl font-bold">
         Welcome 👋
       </h1>
 
-      <p className="mt-2 text-lg text-slate-600">
+      <p className="mt-2 text-sm text-slate-600">
         Manage your SignSense AI profile and preferences.
       </p>
 
@@ -238,11 +238,11 @@ const handleLogout = () => {
 
         <div className="bg-white rounded-3xl shadow-md mt-8 p-8">
 
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-xl font-bold">
             About SignSense AI
           </h2>
 
-          <p className="text-slate-600 mt-4 leading-7">
+          <p className="text-slate-400 mt-2 leading-7">
             SignSense AI is a Smart ISL Glove Recognition System
             developed to bridge the communication gap between
             the deaf and hearing communities using Artificial
