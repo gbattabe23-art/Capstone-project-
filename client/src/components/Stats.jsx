@@ -1,19 +1,19 @@
 function Stats() {
   const stats = [
     {
-      number: "95%",
+      number: "",
       title: "Recognition Accuracy",
     },
     {
-      number: "500+",
+      number: "",
       title: "Supported Gestures",
     },
     {
-      number: "<1s",
+      number: "",
       title: "Translation Speed",
     },
     {
-      number: "24/7",
+      number: "",
       title: "Availability",
     },
   ];

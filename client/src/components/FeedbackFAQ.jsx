@@ -4,11 +4,6 @@ import { FaChevronDown, FaChevronUp, FaQuestionCircle } from "react-icons/fa";
 function FeedbackFAQ() {
   const faqs = [
     {
-      question: "Why should I submit feedback?",
-      answer:
-        "Your feedback helps improve the Smart ISL Glove by identifying incorrect recognitions. This allows developers to enhance the AI model and increase recognition accuracy over time.",
-    },
-    {
       question: "How is my feedback used?",
       answer:
         "Submitted feedback is reviewed by the system administrators and development team to identify recognition errors, improve datasets, and train future versions of the recognition model.",
@@ -24,45 +19,9 @@ function FeedbackFAQ() {
         "Yes. You can submit feedback whenever you notice an incorrect recognition. Multiple submissions help improve different scenarios and recognition cases.",
     },
     {
-      question: "What if I accidentally submit incorrect feedback?",
-      answer:
-        "Don't worry. Administrators review submitted feedback before using it for future improvements. Occasional mistakes will not negatively affect the system.",
-    },
-    {
       question: "Can I report feedback for both letters and words?",
       answer:
         "Yes. Feedback can be submitted for individual letters, numbers, or complete words recognized by the Smart ISL Glove.",
-    },
-    {
-      question: "How does feedback improve the system?",
-      answer:
-        "Collected feedback helps identify patterns of incorrect predictions. These insights are used to refine the machine learning model, resulting in better recognition accuracy for future users.",
-    },
-    {
-      question: "Does submitting feedback immediately change the AI model?",
-      answer:
-        "No. Feedback is first reviewed and validated before being used to improve future versions of the recognition model.",
-    },
-    {
-      question: "Should I submit feedback for every incorrect prediction?",
-      answer:
-        "Yes. Every genuine incorrect prediction provides valuable information that helps improve the reliability and performance of the recognition system.",
-    },
-    {
-      question: "How many letters or words should I submit at once?",
-      answer:
-        "Please submit feedback for only one letter, one number, or one word per submission. This keeps the feedback clear and easier to analyze.",
-    },
-    {
-      question:
-        "Can feedback help improve recognition in different environments?",
-      answer:
-        "Yes. Feedback collected under different lighting conditions, hand positions, and glove orientations helps improve the robustness of the recognition model.",
-    },
-    {
-      question: "Who reviews the submitted feedback?",
-      answer:
-        "Only authorized administrators and developers responsible for maintaining the Smart ISL Glove system review feedback for quality improvement purposes.",
     },
   ];
 

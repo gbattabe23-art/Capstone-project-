@@ -11,7 +11,7 @@ function FAQ() {
     {
       question: "Who can use this system?",
       answer:
-        "It is designed primarily for deaf and hard-of-hearing individuals, educators, researchers, and anyone interested in improving communication through ISL.",
+        "It is designed to support individuals who use Indian Sign Language (ISL), including deaf individuals, people with speech impairments, educators, researchers, caregivers, and anyone interested in learning or communicating through ISL.",
     },
     {
       question: "Does it work in real time?",

@@ -157,16 +157,10 @@ function Recognize() {
                   </div>
 
                   <div className="flex items-center justify-between rounded-xl bg-slate-50 p-4">
-                    <span className="font-medium text-slate-600">Model</span>
-
-                    <span className="font-semibold text-slate-800">CNN</span>
-                  </div>
-
-                  <div className="flex items-center justify-between rounded-xl bg-slate-50 p-4">
                     <span className="font-medium text-slate-600">Status</span>
 
                     <span className="font-semibold text-green-600">
-                      Connected
+                      ---
                     </span>
                   </div>
 

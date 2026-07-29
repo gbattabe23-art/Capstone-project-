@@ -1,7 +1,7 @@
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 function Hero() {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white">
       <div className="mx-auto max-w-7xl px-6 pt-32 pb-24 lg:flex lg:items-center lg:justify-between">
@@ -27,9 +27,9 @@ function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <button
-    onClick={() => navigate("/login")}
-    className="flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
->
+              onClick={() => navigate("/login")}
+              className="flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+            >
               Get Started
               <ArrowRight size={18} />
             </button>
@@ -43,13 +43,13 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="mt-14 flex justify-center lg:mt-0">
-          <div className="flex h-80 w-80 items-center justify-center rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-400 shadow-2xl lg:h-96 lg:w-96">
-            <span className="text-center text-xl font-bold text-white">
-              Smart Glove
-              <br />
-              Illustration
-            </span>
+        <div className="mt-14 flex justify-center lg:mt-0 lg:flex-1">
+          <div className="overflow-hidden rounded-3xl shadow-xl">
+            <img
+              src="/images/landing_glove.png"
+              alt="Smart ISL Glove"
+              className="h-[520px] w-[420px] object-cover"
+            />
           </div>
         </div>
       </div>
