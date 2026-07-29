@@ -12,11 +12,25 @@ import {
   ChevronRight,
 } from "lucide-react";
 import UserNavbar from "../../components/UserNavbar";
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
+    const navigate = useNavigate();
   const [darkMode, setDarkMode] = useState(false);
   const [notifications, setNotifications] = useState(true);
+const handleLogout = () => {
+    const confirmLogout = window.confirm(
+      "Are you sure you want to sign out?"
+    );
 
+    if (confirmLogout) {
+         window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Use "auto" if you don't want the animation
+    });
+      navigate("/");
+    }
+  };
   return (
     <>
       <UserNavbar />
@@ -242,14 +256,13 @@ function Profile() {
         </div>
 
         {/* Sign Out */}
-
-        <button className="w-full mt-8 bg-red-50 border border-red-200 rounded-2xl py-4 text-red-600 font-semibold flex justify-center items-center gap-3 hover:bg-red-100 transition">
-
-          <LogOut size={22} />
-
-          Sign Out
-
-        </button>
+<button
+  onClick={handleLogout}
+  className="w-full mt-8 bg-red-50 border border-red-200 rounded-2xl py-4 text-red-600 font-semibold flex justify-center items-center gap-3 hover:bg-red-100 transition"
+>
+  <LogOut size={22} />
+  Sign Out
+</button>
 
       </div>
 
