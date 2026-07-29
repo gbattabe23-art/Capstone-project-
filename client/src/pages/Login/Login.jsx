@@ -1,12 +1,19 @@
 import { Hand, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import aiHand from "../../assets/images/pexels-tara-winstead-8386437.jpg";
 
 function Login() {
   const [role, setRole] = useState("user");
   const [showPassword, setShowPassword] = useState(false);
-
+const navigate = useNavigate();
+const handleLogin = () => {
+  if (role === "user") {
+    navigate("/user/home");
+  } else {
+    navigate("/admin/dashboard");
+  }
+};
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* Left Section */}
@@ -157,10 +164,12 @@ function Login() {
           </div>
 
           {/* Login Button */}
-          <button className="mt-7 w-full rounded-xl bg-blue-600 py-3 text-lg font-semibold text-white hover:bg-blue-700 transition">
-            Sign In
-          </button>
-
+          <button
+  onClick={handleLogin}
+  className="mt-7 w-full rounded-xl bg-blue-600 py-3 text-lg font-semibold text-white hover:bg-blue-700 transition"
+>
+  Sign In
+</button>
           {/* Register */}
 
 
