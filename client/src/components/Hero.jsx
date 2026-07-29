@@ -1,6 +1,7 @@
 import { ArrowRight, PlayCircle } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 function Hero() {
+   const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white">
       <div className="mx-auto max-w-7xl px-6 pt-32 pb-24 lg:flex lg:items-center lg:justify-between">
@@ -25,7 +26,10 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700">
+            <button
+    onClick={() => navigate("/login")}
+    className="flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+>
               Get Started
               <ArrowRight size={18} />
             </button>

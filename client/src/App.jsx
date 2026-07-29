@@ -1,19 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import Register from "./pages/Register/Register";
 import Landing from "./pages/Landing/Landing";
-// import Login from "./pages/Login/Login";   // Uncomment when created
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-
-        {/* Add more routes later */}
-
-        {/* <Route path="/login" element={<Login />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
 }
 
