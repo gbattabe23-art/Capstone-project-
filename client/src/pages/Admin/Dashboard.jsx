@@ -46,7 +46,7 @@ function Dashboard() {
 
       <div className="flex-1">
 
-        <AdminTopbar />
+       <AdminTopbar title="Dashboard" />
 
         <div className="p-8">
 
