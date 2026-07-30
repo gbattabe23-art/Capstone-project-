@@ -49,7 +49,7 @@ function UserDashboard() {
 
               <div>
 
-                <h2 className="text-lg font-bold">
+                <h2 className="text-mt font-bold">
                   Smart Glove
                 </h2>
 

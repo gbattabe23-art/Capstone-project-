@@ -67,11 +67,11 @@ function Dashboard() {
 
                     <div>
 
-                      <p className="text-sm text-slate-500">
+                      <p className="text-mt text-slate-500">
                         {card.title}
                       </p>
 
-                      <h2 className="mt-3 text-3xl font-bold">
+                      <h2 className="mt-3 text-2xl font-bold">
                         {card.value}
                       </h2>
 
@@ -82,7 +82,7 @@ function Dashboard() {
                     </div>
 
                     <div
-                      className={`w-14 h-14 rounded-2xl ${card.color} flex items-center justify-center text-white`}
+                      className={`w-14 h-14 rounded-xl ${card.color} flex items-center justify-center text-white`}
                     >
                       <Icon size={26} />
                     </div>
@@ -99,7 +99,7 @@ function Dashboard() {
 
           <div className="mt-8 rounded-3xl bg-white p-8 shadow-md">
 
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-mt font-semibold">
               Recent Recognition Activity
             </h2>
 
@@ -117,7 +117,7 @@ function Dashboard() {
 
             <div className="rounded-3xl bg-white p-8 shadow-md">
 
-              <h2 className="text-xl font-semibold">
+              <h2 className="text-mt font-semibold">
                 Recent Users
               </h2>
 
@@ -131,7 +131,7 @@ function Dashboard() {
 
             <div className="rounded-3xl bg-white p-8 shadow-md">
 
-              <h2 className="text-xl font-semibold">
+              <h2 className="text-lg font-semibold">
                 Latest Feedback
               </h2>
 
