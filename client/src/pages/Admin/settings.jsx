@@ -243,17 +243,6 @@ function Settings() {
 
           {/* Logout */}
 
-          <button
-            onClick={handleLogout}
-            className="w-full mt-8 bg-red-50 border border-red-200 rounded-2xl py-4 text-red-600 font-semibold flex items-center justify-center gap-3 hover:bg-red-100 transition"
-          >
-
-            <LogOut size={22} />
-
-            Sign Out
-
-          </button>
-
         </div>
 
       </div>
