@@ -61,7 +61,7 @@ function Recognize() {
                 </h2>
 
                 <p className="mt-1 text-sm text-slate-500">
-                  CNN Model • Real-Time Inference
+                  • Real-Time Inference
                 </p>
               </div>
 
@@ -159,9 +159,7 @@ function Recognize() {
                   <div className="flex items-center justify-between rounded-xl bg-slate-50 p-4">
                     <span className="font-medium text-slate-600">Status</span>
 
-                    <span className="font-semibold text-green-600">
-                      ---
-                    </span>
+                    <span className="font-semibold text-green-600">---</span>
                   </div>
 
                   <div className="flex items-center justify-between rounded-xl bg-slate-50 p-4">

@@ -8,71 +8,6 @@ function Learn() {
 
   const [activeTab, setActiveTab] = useState("letters");
 
-  // ===========================
-  // LETTERS (A-Z)
-  // Replace image: "" with your image URL later
-  // ===========================
-
-  const letters = [
-    { label: "A", image: "" },
-    { label: "B", image: "" },
-    { label: "C", image: "" },
-    { label: "D", image: "" },
-    { label: "E", image: "" },
-    { label: "F", image: "" },
-    { label: "G", image: "" },
-    { label: "H", image: "" },
-    { label: "I", image: "" },
-    { label: "J", image: "" },
-    { label: "K", image: "" },
-    { label: "L", image: "" },
-    { label: "M", image: "" },
-    { label: "N", image: "" },
-    { label: "O", image: "" },
-    { label: "P", image: "" },
-    { label: "Q", image: "" },
-    { label: "R", image: "" },
-    { label: "S", image: "" },
-    { label: "T", image: "" },
-    { label: "U", image: "" },
-    { label: "V", image: "" },
-    { label: "W", image: "" },
-    { label: "X", image: "" },
-    { label: "Y", image: "" },
-    { label: "Z", image: "" },
-  ];
-
-  // ===========================
-  // DIGITS
-  // Replace image: "" later
-  // ===========================
-
-  const digits = [
-    { label: "0", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-bPO-xS3k6Ree2oRDxQWhSKrjYj_-XSCishOO892fXQ&s=10" },
-    { label: "1", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkYaz42xpWK1G_jdqzY3o0VV76d-rWRUdivkG0tjfTHuTojpTNDWVP1Y&s=10" },
-    { label: "2", image: "" },
-    { label: "3", image: "https://media.istockphoto.com/id/1182669389/photo/finger-spelling-number-6-in-asl-on-white-background-american-sign-language-concept.jpg?s=612x612&w=0&k=20&c=mAOEmbRNBUfeYuLRLixXWentnP-Ypyc68bsqXnnMggg=" },
-    { label: "4", image: "" },
-    { label: "5", image: "" },
-    { label: "6", image: "" },
-    { label: "7", image: "" },
-    { label: "8", image: "" },
-    { label: "9", image: "" },
-  ];
-
-  // ===========================
-  // WORDS
-  // Add more later
-  // ===========================
-
-  const words = [
-    { label: "Hello", image: "" },
-    { label: "Thank You", image: "" },
-    { label: "Please", image: "" },
-    { label: "Help", image: "" },
-    { label: "Water", image: "" },
-  ];
-
   return (
     <>
       <UserNavbar />
@@ -87,7 +22,7 @@ function Learn() {
             </h1>
 
             <p className="mt-3 text-base text-slate-600">
-              Browse flashcards to learn letters, digits and commonly used
+              Browse visual guides to learn letters, digits and commonly used
               signs.
             </p>
           </div>
@@ -129,80 +64,80 @@ function Learn() {
             </button>
           </div>
 
-          {/* Flashcards */}
+          {/* ========================= */}
+          {/* ALPHABETS */}
+          {/* ========================= */}
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {activeTab === "letters" &&
-              letters.map((item) => (
-                <div
-                  key={item.label}
-                  className="overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="flex h-72 items-center justify-center bg-slate-100">
-                    {item.image ? (
-                      <img
-                        src={item.image}
-                        alt={item.label}
-                        className="h-full w-full object-contain p-4"
-                      />
-                    ) : (
-                      <span className="text-slate-400">Image Here</span>
-                    )}
-                  </div>
+          {activeTab === "letters" && (
+            <div className="rounded-3xl bg-white p-5 shadow-lg">
+              <div className="w-full overflow-hidden rounded-2xl bg-slate-50">
+                <img
+                  src="/images/isl_letters.png"
+                  alt="Indian Sign Language Alphabet Chart"
+                  className="block h-auto w-full rounded-2xl shadow-2xl"
+                />
+              </div>
 
-                  <div className="border-t bg-white py-5 text-center text-2xl font-bold text-slate-800">
-                    {item.label}
-                  </div>
+              <div className="border-t bg-white py-5 text-center">
+                <h2 className="text-2xl font-bold text-slate-800">
+                  Indian Sign Language Alphabets
+                </h2>
+
+                <p className="mt-2 text-slate-500">
+                  A visual guide to the signs used for letters A to Z.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* ========================= */}
+          {/* DIGITS */}
+          {/* ========================= */}
+
+          {activeTab === "digits" && (
+            <div className="rounded-3xl bg-white p-5 shadow-lg">
+              <div className="w-full overflow-hidden rounded-2xl bg-slate-50">
+                <img
+                  src="/images/isl_digits.png"
+                  alt="Indian Sign Language Digits Chart"
+                  className="block h-auto w-full rounded-2xl shadow-2xl"
+                />
+              </div>
+
+              <div className="border-t bg-white py-5 text-center">
+                <h2 className="text-2xl font-bold text-slate-800">
+                  Indian Sign Language Digits
+                </h2>
+
+                <p className="mt-2 text-slate-500">
+                  A visual guide to the signs used for numbers 0 to 9.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* ========================= */}
+          {/* WORDS */}
+          {/* ========================= */}
+
+          {activeTab === "words" && (
+            <div className="flex min-h-[600px] items-center justify-center rounded-3xl bg-white shadow-md">
+              <div className="text-center">
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-100">
+                  <span className="text-3xl font-bold text-blue-600">ISL</span>
                 </div>
-              ))}
-            {activeTab === "digits" &&
-              digits.map((item) => (
-                <div
-                  key={item.label}
-                  className="overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="flex h-72 items-center justify-center bg-slate-100">
-                    {item.image ? (
-                      <img
-                        src={item.image}
-                        alt={item.label}
-                        className="h-full w-full object-contain p-4"
-                      />
-                    ) : (
-                      <span className="text-slate-400">Image Here</span>
-                    )}
-                  </div>
 
-                  <div className="border-t bg-white py-5 text-center text-2xl font-bold text-slate-800">
-                    {item.label}
-                  </div>
-                </div>
-              ))}
+                <h2 className="mt-6 text-2xl font-bold text-slate-800">
+                  Words Coming Soon
+                </h2>
 
-            {activeTab === "words" &&
-              words.map((item) => (
-                <div
-                  key={item.label}
-                  className="overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="flex h-72 items-center justify-center bg-slate-100">
-                    {item.image ? (
-                      <img
-                        src={item.image}
-                        alt={item.label}
-                        className="h-full w-full object-contain p-4"
-                      />
-                    ) : (
-                      <span className="text-slate-400">Image Here</span>
-                    )}
-                  </div>
-
-                  <div className="border-t bg-white py-5 text-center text-xl font-bold text-slate-800">
-                    {item.label}
-                  </div>
-                </div>
-              ))}
-          </div>
+                <p className="mt-3 max-w-md text-slate-500">
+                  Commonly used Indian Sign Language words will be added here
+                  later.
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </main>
     </>

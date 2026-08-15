@@ -46,9 +46,9 @@ function Hero() {
         <div className="mt-14 flex justify-center lg:mt-0 lg:flex-1">
           <div className="overflow-hidden rounded-3xl shadow-xl">
             <img
-              src="/images/landing_glove.png"
+              src="/images/image.png"
               alt="Smart ISL Glove"
-              className="h-[520px] w-[420px] object-cover"
+              className="w-full max-w-[620px] rounded-3xl object-contain"
             />
           </div>
         </div>
