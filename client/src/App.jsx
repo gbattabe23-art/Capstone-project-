@@ -9,6 +9,7 @@ import Learn from "./pages/User/Learn";
 import Feedback from "./pages/User/Feedback";
 import Recognize from "./pages/User/Recognize";
 import Profile from "./pages/User/Profile";
+import Settings from "./pages/Admin/settings";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 <Route path="/user/feedback" element={<Feedback />} />
 <Route path="/user/profile" element={<Profile />} />
 <Route path="/admin/dashboard" element={<AdminDashboard />} />
+<Route path="/admin/settings" element={<Settings />} />
     </Routes>
   );
 }

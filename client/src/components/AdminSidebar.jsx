@@ -24,16 +24,6 @@ function AdminSidebar() {
       path: "/admin/users",
     },
     {
-      name: "Devices",
-      icon: Hand,
-      path: "/admin/devices",
-    },
-    {
-      name: "Recognitions",
-      icon: ScanLine,
-      path: "/admin/recognitions",
-    },
-    {
       name: "Feedback",
       icon: MessageSquare,
       path: "/admin/feedback",
@@ -121,10 +111,6 @@ function AdminSidebar() {
           <h3 className="font-semibold">
             Admin
           </h3>
-
-          <p className="text-sm text-slate-400">
-            administrator@signsense.ai
-          </p>
 
         </div>
 
