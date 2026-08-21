@@ -33,11 +33,15 @@ function Hero() {
               Get Started
               <ArrowRight size={18} />
             </button>
-
-            <button className="flex items-center gap-2 rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-100">
-              <PlayCircle size={18} />
-              Watch Demo
-            </button>
+<a
+  href="/videos/signsense-demo.mp4"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-50"
+>
+  <PlayCircle size={20} />
+  Watch Demo
+</a>
           </div>
         </div>
 

@@ -117,35 +117,7 @@ const handleLogout = () => {
             Preferences
           </h2>
 
-          {/* Dark Mode */}
 
-          <div className="flex items-center justify-between px-6 py-5 hover:bg-slate-50 transition">
-
-            <div className="flex items-center gap-4">
-
-              <Moon className="text-blue-600" />
-
-              <div>
-
-                <h3 className="font-semibold">
-                  Dark Mode
-                </h3>
-
-                <p className="text-sm text-slate-500">
-                  Switch interface theme
-                </p>
-
-              </div>
-
-            </div>
-
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
-            />
-
-          </div>
 
           {/* Notifications */}
 
